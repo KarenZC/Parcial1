@@ -20,9 +20,13 @@ Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 
 // CREA TU FUNCION MAYUSCULAS aqui:
 
+function mayusculas(text){
+for( var i=0; i<text.length; i++){
+    console.log(text[i].toLocaleUpperCase());
+}
+}
 
-
-
+mayusculas(nombres);
 /*
 Funciones 2 -  Crea una funcion llamada "calculateDogAge" que: 
 
@@ -34,11 +38,13 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 */
 
 // CREA TU FUNCION calculateDogAge aqui:
+function calculateDogAge(age){
+    age=parseInt(age);
+    newAge=age*7;
+    console.log(`Tu perro tiene ${newAge} años perro`);
+}
 
-
-
-
-
+calculateDogAge(2);
 /*
 
 ### Funciones 3 - Crea 2 funciones. Una llamada celsiusToFahrenheit que:
@@ -55,19 +61,30 @@ EJ:
 
 
 celsiusToFahrenheit(35)  --> 95
-
 fahrenheitToCelsius(95) --> 35
 
 */
 
 
-
-
 // CREA TUS FUNCIONES  aqui:
 
+function celsiusToFahrenheit(celcius){
+    celcius= parseInt(celcius);
+    var fahr= (celcius*(9/5))+32;
+    console.log(Math.trunc(fahr));
+}
 
+celsiusToFahrenheit(35);
 
+    
 
+function fahrenheitToCelsius(fahr){
+    fahr= parseInt(fahr);
+    var celcius= ((fahr-32)*(5/9));
+    console.log(Math.trunc(celcius));
+}
+
+fahrenheitToCelsius(35);
 
 
 /*  OBJETOS 
