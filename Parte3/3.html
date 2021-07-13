@@ -26,7 +26,7 @@ for( var i=0; i<text.length; i++){
 }
 }
 
-mayusculas(nombres);
+//mayusculas(nombres);
 /*
 Funciones 2 -  Crea una funcion llamada "calculateDogAge" que: 
 
@@ -44,7 +44,7 @@ function calculateDogAge(age){
     console.log(`Tu perro tiene ${newAge} años perro`);
 }
 
-calculateDogAge(2);
+//calculateDogAge(2);
 /*
 
 ### Funciones 3 - Crea 2 funciones. Una llamada celsiusToFahrenheit que:
@@ -74,7 +74,7 @@ function celsiusToFahrenheit(celcius){
     console.log(Math.trunc(fahr));
 }
 
-celsiusToFahrenheit(35);
+//celsiusToFahrenheit(35);
 
     
 
@@ -84,7 +84,7 @@ function fahrenheitToCelsius(fahr){
     console.log(Math.trunc(celcius));
 }
 
-fahrenheitToCelsius(35);
+//fahrenheitToCelsius(35);
 
 
 /*  OBJETOS 
@@ -103,8 +103,29 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 
 */
 
+    var Perro= {
+        Nombre: 'Ninna',
+        Color: 'Negro',
+        Raza: 'Pastor Aleman'
+    };
 
-
+    var carro={
+        modelo:'Jetta',
+        marca:'VMW',
+        age:'2005'
+    };
+    
+    var persona={
+        nombre:'Karen',
+        edad: 23,
+    };
+    
+    var silla={
+        color:'negro',
+        marca:'p&g',
+        precio:1500
+    }
+    
 /***
  * 
  *        PRUEBA TUS FUNCIONES
@@ -114,8 +135,8 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 
 mayusculas(nombres);
 calculateDogAge(4);
-celsiusToFahrenheit(35)
-fahrenheitToCelsius(95)
+celsiusToFahrenheit(35);
+fahrenheitToCelsius(95);
 
 
 
@@ -126,8 +147,10 @@ fahrenheitToCelsius(95)
  *        PRUEBA TUS OBJETOS AQUI
  * 
  ***/
-
-
+      console.log(Perro.Color);
+      console.log(persona.nombre);
+     console.log(carro.marca);
+    console.log(silla.color);
 </script>
 
 </head>
